@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
 
-export function Card({ name, id, image }) {
+export function Card({ name, image, style, className }) {
   return (
-    <>
+    <div style={style} className={className}>
       <img src={image} />
       <p>{name}</p>
-    </>
+    </div>
   );
 }
